@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQUery Callback</title>
+	<script src="js/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("button").click(function() {
+				$("p").hide("slow", function() {
+					alert("Paragraf Pemrog. Web TI is Hide");
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+<button>HIDE</button>
+<p>Ini Paragraf yaaa !</p>
+</body>
+</html>
